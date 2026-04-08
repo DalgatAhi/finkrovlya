@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background: #f8fafb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(165, 95, 63, 0.08), transparent 30rem),
+    linear-gradient(180deg, #f8fafb 0%, #eef3f6 100%);
+  color: #111417;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #a55f3f;
+  color: #ffffff;
+}
+
+.scene-grid {
+  background-image:
+    linear-gradient(rgba(17, 20, 23, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 20, 23, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
